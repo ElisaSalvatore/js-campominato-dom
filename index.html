@@ -9,21 +9,28 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <h1>CAMPOMINATO GRID</h1>
+    <h1>CAMPOMINATO DOM</h1>
 
-    <div onclick="createGrid(containerBox)" class="button level-one">LIVELLO 1</div>
-    
-    <div onclick="createGrid(containerBox)" class="button level-two">LIVELLO 2</div>
+    <div class="btn-row">
+        <div class="btn-levels">
+            <div onclick="createGrid(containerBox)" class="button level-one">LIVELLO 1</div>
+            
+            <div onclick="createGrid(containerBox)" class="button level-two">LIVELLO 2</div>
+        
+            <div onclick="createGrid(containerBox)" class="button level-three">LIVELLO 3</div>
+        </div>
+        
+        <div type="reset" class="btn-reset">NUOVA PARTITA</div>
+    </div>
 
-    <div onclick="createGrid(containerBox)" class="button level-three">LIVELLO 3</div>
-    
     <div class="level-difficulty"></div>
     
+    <div class="score"></div>
+
     <div class="game-grid">
-
         <div class="container"></div>
-
     </div>
+
 
     <script src="./js/script.js"></script>
 </body>
